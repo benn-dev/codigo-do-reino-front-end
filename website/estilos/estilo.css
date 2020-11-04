@@ -1,0 +1,79 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+/***header***/
+#bloco__cabeçalho{ /*100 pontos*/
+  background: #000000; /*cor background da logo */
+  width: 100%;/*suprir todo o espaço da tela */
+  height: 60px;/*altura da logo */
+  display: block;/*bloco que encaixa a barra de navegação e a logo */
+  border: 2px red solid;
+}
+  /**lOGO**/
+.bloco__logo{/*10 pontos*/
+  display: inline-block;/*encaixar na mesma linha com a barra de navegação */
+  padding-left: 15px;
+  padding-top: 10px;
+  width: 25%;/*espaço para todo o conteudo da logo */
+  height:50px; /*acompanhar tamanho do bloco pai enserido */
+  border:2px red solid;/*teste*/
+}
+.tamanho__logo{/*10 pontos*/
+  width:100%;/*herdar características do bloco pai */
+  height: inherit;/*herdar características do bloco pai */
+}
+  /**FINAL LOGO**/
+
+ /**BARRA DE NAVEGAÇÃO**/
+/*problema para resolver: como deixar os elementos da lista com a mesma altura do botão?*/
+.bloco__barra-navegacao__inline-block{
+  float: right; /*voar com a barra para o canto direito da tela */
+  display: inline-block; /*transformar o bloco num retangulo expansível */
+  width: 65%; /*largura adaptativa, calculada com base na logo adptativa */
+  border: 2px blue solid;
+}
+button , .botao__menu{
+  display: inline-block;
+  float: right; /*canto direito*/
+  border:2px orange solid;
+}
+.elemento-lista__inline-block{
+  display:inline-block;
+  position: relative;
+  top: 18px;
+  border:2px orange solid;
+}
+/*LINKS BARRA DE NAVEGAÇÃO*/
+a{
+  text-decoration: none;
+  color: #fff;
+}
+a:clicked{
+
+}
+/*FINAL LINKS BARRA DE NAVEGAÇÃO */
+/**Final BARRA DE NAVEGAÇÃO**/
+/*CSS para DESKTOP */
+  @media (min-width:480px){
+    #cabeçalho{ /*100 pontos*/
+      background: #000000; /*cor background da logo */
+      width: 100%;/*suprir todo o espaço da tela */
+      height: 90px;/*altura da logo */
+      display: block;/*bloco que encaixa a barra de navegação e a logo */
+      border: 2px red solid;
+    }
+    .logo{
+      display: inline-block;/*encaixar na mesma linha com a barra de navegação */
+      padding-left: 15px;
+      padding-top: 10px;
+      width: 220px;/*espaço para todo o conteudo da logo */
+      height: 80px;
+      border:2px red solid;/*teste*/
+    }
+    .tamanho_logo{/*10 pontos*/
+      width:100%;/*herdar características do bloco pai */
+      height: inherit;/*herdar características do bloco pai */
+    }
+  }
+/*fim CSS para DESTKOP */
